@@ -10,31 +10,46 @@
             color: #c9d1d9;
             font-family: monospace;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
             text-align: center;
         }
         .commit-box {
             background-color: #161b22;
-            padding: 15px;
-            border-radius: 8px;
+            padding: 20px;
+            border-radius: 10px;
             border: 1px solid #30363d;
+            width: 90%;
             max-width: 600px;
-            margin: 0 auto 20px;
             text-align: left;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            font-size: 1rem;
         }
         .green { color: #3fb950; }
         .yellow { color: #d29922; }
         .blue { color: #58a6ff; }
         .gif-container {
-            max-width: 1000px;
-            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         img {
-            max-width: 80%;
+            width: 100%;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        @media (max-width: 600px) {
+            .commit-box {
+                padding: 15px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
